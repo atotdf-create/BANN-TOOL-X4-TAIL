@@ -55,6 +55,7 @@ fi
 
 # --- 6. Make the bot executable ---
 chmod +x bot.py
+chmod +x tdftech.py
 
 echo -e "\n${GREEN}[+] Setup complete!${NC}"
 echo -e "${CYAN}To run your tdftech Telegram Bot, execute:${NC}"

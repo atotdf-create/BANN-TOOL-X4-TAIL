@@ -1,29 +1,22 @@
-# BANN-TOOL-X4-TAIL: tdftech Powerful Telegram Bot Framework
+# BANN-TOOL-X4-TAIL: tdftech All-in-One Termux Tool
 
-![tdftech Banner](https://raw.githubusercontent.com/atotdf-create/BANN-TOOL-X4-TAIL/main/tdftech_banner.png) <!-- Placeholder for a future banner image -->
+![tdftech Banner](https://raw.githubusercontent.com/atotdf-create/BANN-TOOL-X4-TAIL/main/tdftech_banner.png)
 
 ## Overview
 
-This project provides a powerful and customizable Telegram bot framework designed for Termux environments. Developed by tdftech, this bot integrates AI capabilities, autotyping features, and a modular command system, all presented with a vibrant, colorful terminal user interface.
+Welcome to the **BANN-TOOL-X4-TAIL**, a powerful and comprehensive "All-in-One" tool developed by **tdftech** for Termux. This tool provides a unified CLI menu to manage your Telegram bot, perform setups, and access advanced features like AI and autotyping.
 
 ## Features
 
-*   **Telegram Bot API Integration:** Built on `python-telegram-bot` for robust interaction with the Telegram platform.
-*   **Modular Command System:** Easily extendable architecture for adding new commands.
-*   **AI Integration (Mock):** Includes a placeholder for integrating with external AI APIs (e.g., OpenAI, Gemini) for intelligent responses. The current implementation provides a mock AI response.
-*   **Autotyping Mode:** Simulates typing activity in Telegram chats to enhance user experience.
-*   **Colorful Termux UI:** Utilizes ANSI escape codes for a visually engaging console output, featuring a custom `tdftech` banner and watermarks.
-*   **Scanning Command (Ethical Placeholder):** A placeholder for legitimate scanning functions, designed with ethical considerations in mind. **No unauthorized or malicious scanning capabilities are implemented.**
+*   **Unified CLI Menu:** A central script (`tdftech.py`) to access all functions easily.
+*   **Automatic Setup:** A robust `setup.sh` script to install dependencies and configure your bot in one go.
+*   **Powerful Telegram Bot:** Built on `python-telegram-bot` with modular commands.
+*   **AI Integration:** Mock AI handler ready for integration with OpenAI or Gemini.
+*   **Autotyping Mode:** Simulate realistic typing activity in your Telegram chats.
+*   **Vibrant UI:** Colorful terminal output and custom branding optimized for Termux.
+*   **Secure & Ethical:** Designed for legitimate use with placeholders for scanning functions.
 
-## Getting Started
-
-### Prerequisites
-
-*   **Termux:** Ensure Termux is installed on your Android device.
-*   **Python 3:** Installed automatically by the setup script.
-*   **Git:** Installed automatically by the setup script.
-
-### Installation and Setup
+## Installation
 
 1.  **Clone the Repository:**
     ```bash
@@ -31,64 +24,40 @@ This project provides a powerful and customizable Telegram bot framework designe
     cd BANN-TOOL-X4-TAIL
     ```
 
-2.  **Run the Setup Script:**
+2.  **Launch the All-in-One Tool:**
     ```bash
-    bash setup.sh
-    ```
-    This script will:
-    *   Update and upgrade Termux packages.
-    *   Install Python and Git.
-    *   Install all required Python dependencies.
-    *   Prompt you to enter your Telegram Bot Token and (optionally) your AI API Key, then configure `config.py` automatically.
-
-### Running the Bot
-
-After running `setup.sh`, you can start your bot with:
-
-```bash
-python bot.py
-```
-
-The bot will start, and you will see the `tdftech` banner and logs in your Termux terminal.
-
-## Usage
-
-Once the bot is running, you can interact with it on Telegram:
-
-*   `/start` - Get a welcome message.
-*   `/help` - View a list of all available commands.
-*   `/ask <query>` - Send a query to the AI (currently mocked).
-*   `/autotype <message>` - The bot will simulate typing and then send your message.
-*   `/scan <target>` - A placeholder for legitimate scanning functions.
-
-## Extending the Bot
-
-### Adding New Commands
-
-1.  Create a new Python file in the `handlers/` directory (e.g., `handlers/mycommand.py`).
-2.  Define an asynchronous function for your command (e.g., `async def my_command(update: Update, context: ContextTypes.DEFAULT_TYPE):`).
-3.  In `bot.py`, import your new command function and add a `CommandHandler` to the `application`:
-    ```python
-    from handlers.mycommand import my_command
-    # ...
-    application.add_handler(CommandHandler(\'mycommand\', my_command))
+    python tdftech.py
     ```
 
-### Integrating Real AI
+## How to Use
 
-To integrate a real AI API (like OpenAI or Gemini):
+When you run `python tdftech.py`, you'll see a menu with the following options:
 
-1.  Install the relevant Python library (e.g., `pip install openai` or `pip install google-generativeai`).
-2.  Modify the `get_ai_response` function in `handlers/ai.py` to make actual API calls using your `AI_API_KEY`.
+1.  **Setup Bot:** Run this first to install all prerequisites and configure your Telegram token.
+2.  **Start Telegram Bot:** Launch your bot and keep it running in the terminal.
+3.  **Run Mock AI Query:** A demonstration of how to use the `/ask` command.
+4.  **Run Mock Autotype:** A demonstration of how to use the `/autotype` command.
+5.  **Run Mock Scan:** A demonstration of how to use the `/scan` command.
+0.  **Exit:** Close the tool.
+
+## Bot Commands (In Telegram)
+
+Once your bot is running, you can use these commands directly in Telegram:
+
+*   `/start` - Welcome message.
+*   `/help` - View all available commands.
+*   `/ask <query>` - Interact with the AI.
+*   `/autotype <message>` - Send a message with a typing delay.
+*   `/scan <target>` - Perform a demo secure scan.
 
 ## Contributing
 
-Feel free to fork this repository, submit pull requests, or open issues for bugs and feature requests. Contributions are welcome!
+Feel free to fork this repository, submit pull requests, or open issues. We welcome contributions to enhance the **tdftech** ecosystem!
 
 ## License
 
-This project is licensed under the MIT License - see the `LICENSE` file for details. <!-- Placeholder for a future LICENSE file -->
+This project is licensed under the MIT License.
 
 ## Contact
 
-Developed by tdftech.
+Developed by **tdftech**.
