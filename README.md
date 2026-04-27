@@ -20,17 +20,10 @@ This project provides a powerful and customizable Telegram bot framework designe
 ### Prerequisites
 
 *   **Termux:** Ensure Termux is installed on your Android device.
-*   **Python 3:** Install Python in Termux:
-    ```bash
-    pkg update && pkg upgrade
-    pkg install python
-    ```
-*   **Git:** Install Git in Termux:
-    ```bash
-    pkg install git
-    ```
+*   **Python 3:** Installed automatically by the setup script.
+*   **Git:** Installed automatically by the setup script.
 
-### Installation
+### Installation and Setup
 
 1.  **Clone the Repository:**
     ```bash
@@ -38,31 +31,19 @@ This project provides a powerful and customizable Telegram bot framework designe
     cd BANN-TOOL-X4-TAIL
     ```
 
-2.  **Install Dependencies:**
+2.  **Run the Setup Script:**
     ```bash
-    pip install -r requirements.txt
+    bash setup.sh
     ```
-
-3.  **Obtain Telegram Bot Token:**
-    *   Talk to BotFather on Telegram to create a new bot and get your API token.
-
-4.  **Configure Bot Token:**
-    *   Open `config.py` and replace `
-YOUR_BOT_TOKEN_HERE` with your actual Telegram Bot Token.
-    *   Alternatively, set it as an environment variable:
-        ```bash
-        export TELEGRAM_BOT_TOKEN="YOUR_BOT_TOKEN_HERE"
-        ```
-
-5.  **Configure AI API Key (Optional):**
-    *   If you plan to integrate with a real AI API (e.g., OpenAI, Gemini), obtain an API key from your chosen provider.
-    *   Open `config.py` and replace `YOUR_AI_API_KEY_HERE` with your actual AI API Key.
-    *   Alternatively, set it as an environment variable:
-        ```bash
-        export AI_API_KEY="YOUR_AI_API_KEY_HERE"
-        ```
+    This script will:
+    *   Update and upgrade Termux packages.
+    *   Install Python and Git.
+    *   Install all required Python dependencies.
+    *   Prompt you to enter your Telegram Bot Token and (optionally) your AI API Key, then configure `config.py` automatically.
 
 ### Running the Bot
+
+After running `setup.sh`, you can start your bot with:
 
 ```bash
 python bot.py
